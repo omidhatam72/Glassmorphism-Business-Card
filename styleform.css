@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:url(backpic1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 230px;
+    background-color: rgb(200, 204, 209,0.4);
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(3.7px);
+    box-shadow: 2px 6px 20px rgb(47, 40, 40);
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card .content .line{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    background-color: blueviolet;
+    display: flex;
+    bottom: 0;
+    border-top: 2px solid black;
+
+}
+.card .content .image{
+    object-fit: cover;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .content .image img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 32px;
+    top:50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 3px 3px 20px rgb(37, 35, 35);
+
+}
+.card .content .details{
+     position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  gap: 10px;
+  line-height: 25px;
+ font-weight:100px;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+
+}
+.card .content .details div{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.card .content .details div span{
+    color: rgb(41, 38, 35);
+}
+
+
+
